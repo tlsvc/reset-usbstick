@@ -6,9 +6,6 @@ import os
 import sys
 import argparse
 
-#def get_
-testserial = "AA6271022J4000001492"
-
 def get_properties(path):# {{{
     cmd = "udevadm info --query=property --path=%s" % path
     handle = Popen(cmd.split(),stdout=PIPE)
@@ -139,10 +136,3 @@ if __name__ == "__main__":
 
     else:
         parser.print_help()
-
-
-
-
-
-
-
